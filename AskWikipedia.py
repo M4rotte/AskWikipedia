@@ -37,7 +37,8 @@ url_values = urllib.parse.urlencode(data)
 url = 'http://fr.wikipedia.org/w/api.php'
 full_url = url + '?' + url_values
 
-
+# This script should use the proxy configured in the $http_proxy environment variable 
+# but if you want to hardcode it this is how to do so :
 # proxy = urllib.request.ProxyHandler({'http': r'http://user:*****@server:port',
 #                                      'https': r'http://user:*****@server:port',})
 # auth = urllib.request.HTTPBasicAuthHandler()
